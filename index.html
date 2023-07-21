@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WB-002">
+  <title>WB-002 🤡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Prompt&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <p class="welcome ">Login</p>
+    <img src="https://play-lh.googleusercontent.com/jGlcNxlIG_PoYahhoUaE2DW9pTJMDYZqKJe0HO5tXVtI6p9cY6kGnBOmYIZN3ubwFAc" alt="logo" class="logo" width="100px" height="100px">
+    <form action="" class="login">
+      <input type="text" placeholder="User" class="login_input login_input--user">
+
+      <input type="password" placeholder="Pass" class="login_input loin_input--psw" maxlength="4">
+
+      <button class="login_btn">click</button>
+
+    </form>
+  </nav>
+
+  <main class="app">
+    <div class="balance">
+      <div>
+        <p class="balance_label">Current balnace</p>
+        <div class="balance_date">
+          as of <span class="date">25/02/2022</span>
+        </div>
+
+      </div>
+      <p class="balance_value">0000฿</p>
+    </div>
+
+    <div class="movements">
+      <div class="movements__row">
+        <div class="movements__types movements__types--withdrawal"> 2 withdrawal </div>
+        <div class="movements__date"> 2 days ago </div>
+        <div class="movements__value"> -720฿ </div>
+      </div>
+
+      <div class="movements__row">
+        <div class="movements__types movements__types--deposit">1 deposit </div>
+        <div class="movements__date"> 13/12/2021 </div>
+        <div class="movements__value"> 550฿ </div>
+      </div>
+    </div>
+
+    <div class="summary">
+      <p class="summary_label">In</p>
+      <p class="summary_value summary_value--in">000฿</p>
+      <p class="summary_label">Out</p>
+      <p class="summary_value summary_value--out">000฿</p>
+      <p class="summary_label">Interest</p>
+      <p class="summary_value summary_value--Interest">000฿</p>
+      <button class="btn--sort">&downarrow;SORT</button>
+    </div>
+
+
+    <div class="operation operation--transfer">
+
+      <h2>Tranfer money</h2>
+      <form class="form from--transfer">
+        <input type="text" class="form_input form_input--to">
+        <input type="number" class="form_input form_input--amount">
+        <button class="form_btn form_btn--transfer">&rAarr;</button>
+        <label class="form_label">Transfer to </label>
+        <label class="form_label">Amount</label>
+      </form>
+    </div>
+
+    <div class="operation operation--loan">
+      <h2>Request loan amount</h2>
+      <form class="form form--loan">
+        <input type="number" class=" form_input form--loan--amount">
+        <button class="form_btn form_btn--loan">&rAarr;</button>
+        <label class="form_label form_label--loan">Amount</label>
+      </form>
+    </div>
+
+    <div class="operation operation--close">
+      <h2>Close account</h2>
+      <form class="form form--close">
+        <input type="text" placeholder="username" class="form_input form_input--user">
+        <input type="password" placeholder="pin" class="form_input form_input--psw" maxlength="6">
+        <button class="form_btn form_btn--close">&rAarr;</button>
+        <label class="form_label">Confirm user</label>
+        <label class="form_label">Confirm Password</label>
+      </form>
+    </div>
+
+  </main>
+
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
